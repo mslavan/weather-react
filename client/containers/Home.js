@@ -62,7 +62,7 @@ class Home extends Component {
     const { weather } = this.props;
 
 	  return (
-			<WeatherWidget
+      <WeatherWidget
         extended={weather.extendedMode}
         date={currentDate}
         weather={weather} />

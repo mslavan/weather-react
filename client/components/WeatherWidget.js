@@ -59,6 +59,8 @@ function WeatherWidget ({
  weather
 }) {
 
+  if(!weather.data) return null;
+  
   const temperature = parseInt((weather.data.temperature - 32 )*5/9)
   const apparentTemperature = parseInt((weather.data.apparentTemperature - 32 )*5/9)
   
